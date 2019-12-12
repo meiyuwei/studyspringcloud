@@ -1,0 +1,3 @@
+server:  port: 9001
+  
+spring:  application:    name: service-product #服务名称  datasource:    driver-class-name: com.mysql.jdbc.Driver    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC    username: root    password: root  jpa:    database: MYSQL    show-sql: true    open-in-view: true#配置eurekaeureka:  client:    service-url:      defaultZone: http://localhost:9000/eureka  instance:    prefer-ip-address: true #使用ip地址注册    
